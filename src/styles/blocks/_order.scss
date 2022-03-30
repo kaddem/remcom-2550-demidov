@@ -1,0 +1,12 @@
+.order {
+  padding: 100px 0 90px;
+  background-color: rgba($color-light, 0.2);
+}
+
+.order-inner {
+  @include inner;
+}
+
+.order-title {
+  @include section-title;
+}

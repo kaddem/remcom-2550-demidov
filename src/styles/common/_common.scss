@@ -5,6 +5,11 @@
 }
 
 body {
-  font-family: $font;
+  font-family: $font-open;
   color: $color-dark;
+}
+
+img {
+  display: block;
+  max-width: 100%;
 }

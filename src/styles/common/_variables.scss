@@ -1,5 +1,6 @@
 // Fonts
-$font: Arial, "Helvetica Neue", Helvetica, sans-serif;
+$font-open: "Open Sans", sans-serif;
+$font-ral: "Raleway", sans-serif;
 
 $h1-fz-mobile: 20px;
 $h1-fz-tablet: 32px;
@@ -12,5 +13,7 @@ $color-light: #fbf2da;
 $color-accent: #d46240;
 
 // indents
+$gap: 30px;
+$gap-half: calc($gap / 2);
 
 // breakpoints

@@ -1,28 +1,35 @@
 .promo {
-  padding: 50px 0;
-  background-color: lightsteelblue;
-  border-radius: 10px;
+  padding: 135px 0;
+  background-color: rgba($color-light, 0.2);
 }
 
 .promo-inner {
-  margin: 0 auto;
-  width: 1024px;
-
-  @media (max-width: 1279px) {
-    width: auto;
-    max-width: 1024px;
-  }
+  @include inner;
+  display: flex;
 }
 
-.promo-ttl {
-  font-size: $h1-fz-desktop;
-  font-weight: $h1-fw;
+.promo-info {
+  flex-shrink: 0;
+  flex-basis: 50%;
+  padding-right: $gap-half;
+}
 
-  @media (max-width: 1279px) {
-    font-size: $h1-fz-tablet;
-  }
+.promo-visual {
+  flex-shrink: 0;
+  flex-basis: 50%;
+  padding-left: $gap-half;
+}
 
-  @media (max-width: 669px) {
-    font-size: $h1-fz-mobile;
-  }
+.promo-figure {
+  position: relative;
+}
+
+.promo-photo-desc {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  color: $color-light;
+  background-color: rgba($color-dark, 0.7);
 }
