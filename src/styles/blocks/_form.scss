@@ -1,0 +1,48 @@
+.form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form-field {
+  flex-basis: 100%;
+  margin-bottom: 30px;
+  padding-left: $gap-half;
+  padding-right: $gap-half;
+  border: 1px solid #000;
+}
+
+.form-field-half {
+  flex-basis: 50%;
+}
+
+.form-input,
+.form-textarea {
+  width: 100%;
+  padding: 20px;
+  font-family: $font-open;
+  font-size: 20px;
+  line-height: 27px;
+  color: $color-dark;
+  background-color: $color-light;
+  border-radius: 8px;
+  border: none;
+
+  &:disabled {
+    background-color: gray;
+  }
+}
+
+.form-textarea {
+  height: 167px;
+  resize: vertical;
+}
+
+.form-checkbox-label {
+  font-size: 20px;
+  line-height: 27px;
+
+  a {
+    color: $color-accent;
+  }
+}
+
