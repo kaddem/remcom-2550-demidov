@@ -1,0 +1,19 @@
+.btn {
+  display: inline-block;
+  color: #fff;
+  background-color: $color-accent;
+
+  .promo-info & {
+    @media (max-width: $mobile-max) {
+      display: none;
+    }
+  }
+
+  .promo-visual & {
+    display: none;
+
+    @media (max-width: $mobile-max) {
+      display: inline-block;
+    }
+  }
+}

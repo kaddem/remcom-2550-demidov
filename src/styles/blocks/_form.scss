@@ -3,6 +3,16 @@
   flex-wrap: wrap;
   width: 66.66%;
   margin: 0 auto;
+  margin-top: 70px;
+
+  @media (max-width: $tablet-max) {
+    width: 100%;
+    margin-top: 60px;
+  }
+
+  @media (max-width: $mobile-max) {
+    margin-top: 30px;
+  }
 }
 
 .form-field {
@@ -11,10 +21,27 @@
   padding-left: $gap-half;
   padding-right: $gap-half;
   border: 1px solid #000;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .form-field-half {
   flex-basis: 50%;
+
+  @media (max-width: $mobile-max) {
+    flex-basis: 100%;
+  }
+}
+
+.form-label {
+  display: inline-block;
+  margin-left: 20px;
+  margin-bottom: 5px;
+  font-size: 20px;
+  line-height: 27px;
+  color: $color-accent;
 }
 
 .form-input,
@@ -43,6 +70,11 @@
   display: flex;
   font-size: 20px;
   line-height: 27px;
+
+  @media (max-width: $mobile-max) {
+    font-size: 14px;
+    line-height: 19px;
+  }
 
   &:before {
     content: '';

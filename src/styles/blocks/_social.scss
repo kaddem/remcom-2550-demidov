@@ -1,0 +1,21 @@
+.social {
+  display: flex;
+  list-style: none;
+}
+
+.social-item {
+  margin-left: 15px;
+
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+.social-link {
+  display: block;
+  width: 26px;
+  height: 26px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}

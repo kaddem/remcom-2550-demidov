@@ -1,27 +1,90 @@
 .promo {
   padding: 235px 0 135px;
   background-color: rgba($color-light, 0.2);
+
+  @media (max-width: $tablet-max) {
+    padding: 190px 0 90px;
+  }
+
+  @media (max-width: $mobile-max) {
+    padding: 112px 0 60px;
+    text-align: center;
+  }
 }
 
 .promo-inner {
   @include inner;
   display: flex;
+
+  @media (max-width: $mobile-max) {
+    display: block;
+  }
 }
 
 .promo-info {
   flex-shrink: 0;
   flex-basis: 50%;
   padding-right: $gap-half;
+
+  @media (max-width: $mobile-max) {
+    padding-right: 0;
+    margin-bottom: 40px;
+  }
+}
+
+.promo-title {
+  font-family: $font-ral;
+  font-size: 116px;
+  line-height: 136px;
+  font-weight: 300;
+  color: $color-accent;
+
+  @media (max-width: $tablet-max) {
+    font-size: 64px;
+    line-height: 75px;
+  }
+
+  @media (max-width: $mobile-max) {
+    font-size: 54px;
+    line-height: 63px;
+  }
+}
+
+.promo-text {
+  margin-top: 20px;
+  font-size: 32px;
+  line-height: 44px;
+  color: $color-accent;
+
+  @media (max-width: $tablet-max) {
+    font-size: 24px;
+    line-height: 33px;
+  }
+
+  @media (max-width: $mobile-max) {
+    margin-top: 10px;
+    font-size: 18px;
+    line-height: 25px;
+  }
 }
 
 .promo-visual {
   flex-shrink: 0;
   flex-basis: 50%;
   padding-left: $gap-half;
+
+  @media (max-width: $mobile-max) {
+    padding-left: 0;
+  }
 }
 
 .promo-figure {
   position: relative;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  @media (max-width: $mobile-max) {
+    margin-bottom: 60px;
+  }
 }
 
 .promo-photo-desc {

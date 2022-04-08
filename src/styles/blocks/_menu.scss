@@ -1,14 +1,47 @@
 .menu {
+  @media (max-width: $tablet-max) {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    width: 100%;
+    padding: 20px;
+    background-color: $color-dark;
+    border-top: 1px solid $color-light;
+  }
+
   ul {
     display: flex;
+    list-style: none;
+
+    @media (max-width: $tablet-max) {
+      justify-content: center;
+    }
+
+    @media (max-width: $mobile-max) {
+      display: block;
+      text-align: center;
+    }
   }
 
   li {
     margin: 0 15px;
+
+    @media (max-width: $mobile-max) {
+      margin: 20px 15px;
+    }
   }
 
   a {
+    font-size: 24px;
+    line-height: 33px;
     color: $color-light;
+    text-decoration: none;
+
+    @media (max-width: $mobile-max) {
+      font-size: 20px;
+      line-height: 27px;
+    }
 
     &:hover {
       color: $color-accent;

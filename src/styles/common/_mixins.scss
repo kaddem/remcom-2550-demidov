@@ -1,5 +1,6 @@
 @mixin inner {
-  width: 1278px;
+  max-width: 1278px + $gap;
+  padding: 0 $gap-half;
   margin: 0 auto;
   border: 1px solid red;
 }
@@ -11,4 +12,14 @@
   line-height: 68px;
   color: $color-accent;
   text-align: center;
+
+  @media (max-width: $tablet-max) {
+    font-size: 48px;
+    line-height: 56px;
+  }
+
+  @media (max-width: $mobile-max) {
+    font-size: 32px;
+    line-height: 38px;
+  }
 }

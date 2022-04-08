@@ -1,6 +1,14 @@
 .order {
   padding: 100px 0 90px;
   background-color: rgba($color-light, 0.2);
+
+  @media (max-width: $tablet-max) {
+    padding: 70px 0;
+  }
+
+  @media (max-width: $mobile-max) {
+    padding: 50px 0;
+  }
 }
 
 .order-inner {

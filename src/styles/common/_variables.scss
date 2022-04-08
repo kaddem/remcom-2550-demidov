@@ -1,6 +1,8 @@
 // Fonts
-$font-open: "Open Sans", sans-serif;
-$font-ral: "Raleway", sans-serif;
+$font-open: "Open Sans",
+sans-serif;
+$font-ral: "Raleway",
+sans-serif;
 
 $h1-fz-mobile: 20px;
 $h1-fz-tablet: 32px;
@@ -17,3 +19,9 @@ $gap: 30px;
 $gap-half: calc($gap / 2);
 
 // breakpoints
+$mobile: 320px;
+$tablet: 768px;
+$desktop: 1280px;
+
+$mobile-max: $tablet - 1;
+$tablet-max: $desktop - 1;

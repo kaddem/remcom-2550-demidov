@@ -6,6 +6,10 @@
   z-index: 1000;
   padding: 25px 0;
   background-color: $color-dark;
+
+  @media (max-width: $mobile-max) {
+    padding: 12px 0;
+  }
 }
 
 .header-inner {
@@ -19,4 +23,40 @@
 
 .main-logo {
   margin-right: auto;
+  font-family: $font-ral;
+  font-weight: 300;
+  font-size: 42px;
+  line-height: 49px;
+  color: $color-light;
+  text-decoration: none;
+
+  @media (max-width: $tablet-max) {
+    font-size: 36px;
+    line-height: 42px;
+  }
+
+  @media (max-width: $mobile-max) {
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+
+.header-phone {
+  margin-left: 85px;
+  font-size: 24px;
+  line-height: 33px;
+  color: $color-light;
+  text-decoration: none;
+
+  @media (max-width: $mobile-max) {
+    display: none;
+  }
+}
+
+.burger {
+  display: none;
+
+  @media (max-width: $tablet-max) {
+    display: block;
+  }
 }
