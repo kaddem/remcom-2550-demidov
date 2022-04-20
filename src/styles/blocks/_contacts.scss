@@ -1,0 +1,36 @@
+.contacts {
+  padding: 240px 0 130px;
+}
+
+.contacts-inner {
+  @include inner;
+}
+
+.contacts-title {
+  @include section-title;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+}
+
+.tabs-item {
+  margin: 0 30px;
+}
+
+.tabs-link {
+  text-decoration: none;
+
+  &.active {
+    text-decoration: underline;
+  }
+}
+
+.contacts-item {
+  display: none;
+
+  &.active {
+    display: block;
+  }
+}

@@ -1,0 +1,11 @@
+.works {
+  padding: 240px 0 130px;
+}
+
+.works-inner {
+  @include inner;
+}
+
+.works-title {
+  @include section-title;
+}
