@@ -36,9 +36,10 @@ $(document).ready(function(){
   $('.j-works-link').on('click', function(event){
     event.preventDefault();
 
-    let filterData = $(this).data('filter');
+    $('.j-works-link').removeClass('active');
+    $(this).addClass('active');
 
-    console.log(filterData);
+    let filterData = $(this).data('filter');
 
     if (filterData === 'all') {
       $('.works-item').show();

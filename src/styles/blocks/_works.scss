@@ -1,5 +1,6 @@
 .works {
   padding: 240px 0 130px;
+  background-color: rgba($color-light, .2);
 }
 
 .works-inner {
@@ -8,4 +9,49 @@
 
 .works-title {
   @include section-title;
+}
+
+.works-filter {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.works-filter-item {
+  margin: 0 30px;
+  list-style: none;
+}
+
+.works-link {
+  font-size: 36px;
+  line-height: 49px;
+  text-decoration: none;
+  color: $color-dark;
+
+  &.active {
+    color: $color-accent;
+  }
+}
+
+.works-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  margin-left: -$gap-half;
+  margin-right: -$gap-half;
+}
+
+.works-item {
+  width: 25%;
+  padding: 0 $gap-half;
+  margin-top: 30px;
+}
+
+.works-card {
+  padding: 40px 20px;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0 0 5px rgba($color-dark, .1);
 }

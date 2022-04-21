@@ -1,0 +1,16 @@
+.slider {
+  padding: 100px 0;
+  background-color: $color-light;
+}
+
+.slider-inner {
+  @include inner;
+}
+
+.slider-title {
+  @include section-title;
+}
+
+.slider-wrap {
+  margin-top: 50px;
+}

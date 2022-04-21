@@ -1,5 +1,6 @@
 .contacts {
   padding: 240px 0 130px;
+  background-color: rgba($color-light, .2);
 }
 
 .contacts-inner {
@@ -13,17 +14,23 @@
 .tabs {
   display: flex;
   justify-content: center;
+  margin-top: 100px;
+  margin-bottom: 50px;
 }
 
 .tabs-item {
   margin: 0 30px;
+  list-style: none;
 }
 
 .tabs-link {
+  font-size: 36px;
+  line-height: 49px;
   text-decoration: none;
+  color: $color-dark;
 
   &.active {
-    text-decoration: underline;
+    color: $color-accent;
   }
 }
 
