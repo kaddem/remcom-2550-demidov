@@ -42,3 +42,48 @@
   font-size: 18px;
   line-height: 25px;
 }
+
+.carousel {
+  padding: 0 50px;
+
+  .slick-arrow {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 40px;
+    height: 40px;
+  }
+
+  .slick-prev {
+    left: 0;
+  }
+
+  .slick-next {
+    right: 0;
+  }
+
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+
+    li {
+      list-style: none;
+      margin: 0 5px;
+    }
+
+    .slick-active {
+      button {
+        background-color: $color-dark;
+      }
+    }
+
+    button {
+      width: 10px;
+      height: 10px;
+      border: 2px solid $color-dark;
+      font-size: 0;
+      border-radius: 50%;
+    }
+  }
+}

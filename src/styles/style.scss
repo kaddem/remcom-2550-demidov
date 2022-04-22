@@ -4,6 +4,9 @@
 @import "common/_mixins";
 @import "common/_common";
 
+// plugins
+@import "plugins/slick";
+
 // blocks
 @import "blocks/_header";
 @import "blocks/_menu";

@@ -28,7 +28,6 @@ $(document).ready(function(){
 
     $('.j-contacts-item').removeClass('active');
     $('.j-contacts-item').eq(index).addClass('active');
-
   });
 
 
@@ -58,6 +57,52 @@ $(document).ready(function(){
 
     });
   });
+
+
+  // Аккордеон
+  let prevFaqBtn;
+
+  $('.j-faq-btn').on('click', function(){
+
+    if ( prevFaqBtn === this) {
+      $(this).next().slideToggle();
+
+      return;
+    }
+
+    $('.j-faq-btn').next().slideUp();
+    $(this).next().slideDown();
+
+    prevFaqBtn = this;
+
+  });
+
+  // каруселька
+
+  $('.j-carousel').slick({
+    dots: true
+  });
+
+
+  // Отзывы
+  $('.j-btn-review').on('click', function() {
+
+    $.ajax({
+      type: 'POST',
+      url: 'jsons/reviews.json',
+      data: 'count=2',
+      success: function(response) {
+        // console.log(response);
+      },
+      error: function() {
+
+      }
+    });
+
+
+
+  });
+
 
 
 });
