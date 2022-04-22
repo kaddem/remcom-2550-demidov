@@ -92,7 +92,7 @@ $(document).ready(function(){
       url: 'jsons/reviews.json',
       data: 'count=2',
       success: function(response) {
-        // console.log(response);
+        console.log(response);
       },
       error: function() {
 
