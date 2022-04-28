@@ -92,7 +92,12 @@ $(document).ready(function(){
       url: 'jsons/reviews.json',
       data: 'count=2',
       success: function(response) {
-        console.log(response);
+        const htmlString = createHtmlString(response.review);
+        printToPage(htmlString);
+
+        if (!response.isShowMore) {
+          $('.j-btn-review').hide();
+        }
       },
       error: function() {
 
@@ -100,10 +105,30 @@ $(document).ready(function(){
     });
 
 
-
   });
 
+  function createHtmlString(array) {
+    let htmlString = '';
 
+    array.forEach(function(arrayItem){
+      htmlString = htmlString + `<div class="reviews-item">
+        <div class="reviews-photo-wrap">
+          <img src="${arrayItem.imgUrl}" alt="" class="reviews-img">
+        </div>
+        <div class="reviews-content">
+          <strong class="reviews-name">${arrayItem.name}</strong>
+          <blockquote class="reviews-quote">“${arrayItem.text}”</blockquote>
+        </div>
+      </div>`;
+    });
+
+    return htmlString;
+  }
+
+  function printToPage(string) {
+    console.log(string);
+    $('.j-reviews-list').append(string);
+  }
 
 });
 
